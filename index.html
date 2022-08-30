@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>VUI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <h1>CLIDE, the IDE Helper</h1>
+        <p id="info">This VUI can handle file and tab navigation and creation, and can help explain functions and variables.
+            <br><br>Press the button below to start CLIDE listening. 
+        </p>
+
+        <button id="start-button">Start CLIDE</button>
+      
+        <div id="listening"></div>
+
+        <p class="output" id="output"></p>
+    </div>
+
+    <div id="ide">
+
+        <div id="files">
+            <h1>Files</h1>
+            <div id="file-buttons">
+                <button class="file-button highlighted" id="main" onclick="getMain()">
+                    main.java
+                </button>
+                <button class="file-button" id="utility" onclick="getUtility()">
+                    utility.java
+                </button>
+            </div>
+
+        </div>
+
+        <div id="tabs">
+
+            <div id="buttons">
+                <button class="tab-button highlighted" id="tab-1-button" onclick="openTab('tab-1')">Tab
+                    1</button>
+            </div>
+
+            <div id="code-block">
+                <div id="tab-1" class="code-block">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
